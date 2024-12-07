@@ -12,8 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <div>
-     <Navbar />
+   <div className='bg-primary-black overflow-hidden'>
     <Hero />
     <About />
     <Explore />
