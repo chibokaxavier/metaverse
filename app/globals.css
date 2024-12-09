@@ -7,7 +7,7 @@
   padding: 0;
   /* background-color: #1a232e; */
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: var(--font-Sorts_Mill_Goudy, monospace) !important;
   scroll-behavior: smooth;
 }
 

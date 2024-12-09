@@ -3,12 +3,16 @@
 import { textContainer, textVariant2 } from "@/utils/motion";
 import { motion } from "framer-motion";
 
-interface TYpingTextProps {
+interface TypingTextProps {
   title: string;
   textStyles: string;
 }
+interface TitleTextProps {
+  title: any;
+  textStyles: string;
+}
 
-export const TypingText = ({ title, textStyles }: TYpingTextProps) => (
+export const TypingText = ({ title, textStyles }: TypingTextProps) => (
   <motion.p
     variants={textContainer}
     //@ts-ignore
@@ -22,4 +26,14 @@ export const TypingText = ({ title, textStyles }: TYpingTextProps) => (
   </motion.p>
 );
 
-export const TitleText = () => <h2>Title Text</h2>;
+export const TitleText = ({ title, textStyles }: TitleTextProps) => (
+  <motion.h2
+    variants={textVariant2}
+    initial="hidden"
+    whileInView="show"
+    //@ts-ignore
+    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
+  >
+    {title}
+  </motion.h2>
+);
