@@ -29,8 +29,8 @@ const WhatsNew = () => {
           className={`flex-[0.75] flex-col flex justify-center`}
         >
           <TypingText title="| What is new" textStyles="" />
-          <TitleText title={<>What is new about metaverse</>} textStyles="" />
-          <div className="mt-[31px] flex flex-wrap justify-between gap-[20px] ">
+          <TitleText title={<>What is new about metaverse ?</>} textStyles="" />
+          <div className="mt-[48px] flex flex-wrap justify-between gap-[24px] ">
             {newFeatures.map((feat, index) => (
               <NewFeature key={feat.title} {...feat} />
             ))}
@@ -39,7 +39,7 @@ const WhatsNew = () => {
         <motion.div
           variants={planetVariants("right")}
           //@ts-ignore
-          className={`flex-1 flex justify-center items-center`}
+          className={`flex-1 flex justify-end items-end`}
         >
           <img
             src="/whats-new.png"
