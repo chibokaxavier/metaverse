@@ -46,14 +46,14 @@ const World = () => {
           <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
             <img src="/people-03.png" alt="people" className="w-full h-full" />
           </div>{" "}
-          <div className="absolute top-1/2 left-[20%] w-[196px] h-[150px] p-[6px] rounded-[24px] bg-[#5d6680]">
+          <div className="lg:absolute hidden lg:block top-1/2 left-[20%] w-[196px] h-[150px] p-[6px] rounded-[24px] bg-[#5d6680]">
             <img
               src="/world-2.png"
               alt="people"
               className="w-full h-full rounded-[24px]"
             />
           </div>{" "}
-          <div className="absolute top-1/7 right-[30%] w-[196px] h-[150px] p-[6px] rounded-[24px] bg-[#5d6680]">
+          <div className="lg:absolute hidden lg:block top-1/7 right-[30%] w-[196px] h-[150px] p-[6px] rounded-[24px] bg-[#5d6680]">
             <img
               src="/planet-01.png"
               alt="people"

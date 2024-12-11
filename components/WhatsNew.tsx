@@ -10,7 +10,7 @@ import {
 import { motion, useScroll } from "framer-motion";
 import { TypingText, TitleText, StartSteps } from "@/components";
 import { newFeatures, startingFeatures } from "@/constants";
-import NewFeature from "./NewFeature";
+import { NewFeature } from "@/components";
 
 const WhatsNew = () => {
   return (
@@ -29,7 +29,7 @@ const WhatsNew = () => {
           className={`flex-[0.75] flex-col flex justify-center`}
         >
           <TypingText title="| What is new" textStyles="" />
-          <TitleText title={<>What is new about metaverse ?</>} textStyles="" />
+          <TitleText title={<>What is new about metaverse?</>} textStyles="" />
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px] ">
             {newFeatures.map((feat, index) => (
               <NewFeature key={feat.title} {...feat} />
