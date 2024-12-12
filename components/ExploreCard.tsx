@@ -22,7 +22,7 @@ const ExploreCard = ({
 }: ExploreCardProps) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 1, 1.5)}
      
       className={`relative ${
         active === id ? "lg:flex-[3.5] flex-[10] " : "lg:flex-[0.5] flex-[2]"
