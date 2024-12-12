@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 interface ExploreCardProps {
   active: string;
   handleClick: Dispatch<SetStateAction<string>>;
-  // index: number;
+   index: number;
   id: string;
   imgUrl: string;
   title: string;
