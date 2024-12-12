@@ -1,6 +1,6 @@
 "use client";
 import React, {  Dispatch, SetStateAction } from "react";
-import { fadeIn  } from "@/utils/motion";
+// import { fadeIn  } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 interface ExploreCardProps {
@@ -23,7 +23,7 @@ const ExploreCard = ({
   return (
     <motion.div
       // variants={fadeIn("right", "spring", index * 1, 1.5)}
-       variants={fadeIn("right", "spring", 0.75, 1.5)}
+      //  variants={fadeIn("right", "spring", 0.75, 1.5)}
      
       className={`relative ${
         active === id ? "lg:flex-[3.5] flex-[10] " : "lg:flex-[0.5] flex-[2]"
