@@ -19,7 +19,7 @@ const About = () => {
         <TypingText title="| About Metaverse" textStyles="text-center" />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          //@ts-expect-error unkown 
+
           className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
         >
           <span className="font-extrabold text-white">Metaverse </span>
@@ -38,7 +38,7 @@ const About = () => {
         </motion.p>
         <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
-          //@ts-expect-error unkown 
+          
           src="/arrow-down.svg"
           alt="arrow-down"
           className=" w-[18px] h-[28px] object-contain mt-[28px]"

@@ -10,7 +10,7 @@ import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
   return (
     <motion.nav
-      //@ts-expect-error unkown 
+      
       className={`${styles.xPaddings} py-8 relative `}
       initial="hidden"
       whileInView="show"

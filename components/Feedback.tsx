@@ -3,13 +3,12 @@ import React from "react";
 import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion";
 import { motion } from "framer-motion";
 
-
 const Feedback = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       {" "}
       <motion.div
-        //@ts-expect-error unkown 
+        //@ts-expect-error unkown
         variants={staggerContainer}
         className={`mx-auto flex flex-col lg:flex-row gap-6 2xl:max-w-[1280px] w-full`}
         initial="hidden"
@@ -18,7 +17,6 @@ const Feedback = () => {
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          //@ts-expect-error unkown 
           className={`flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative`}
         >
           <div className="feedback-gradient" />
@@ -31,14 +29,13 @@ const Feedback = () => {
             </p>
           </div>
           <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white">
-          &quot;With the development of technology today , Metaverse is very useful
-            for work in today times or can be called Web 3.0 by using metaverse
-            you can use it as anything&quot;
+            &quot;With the development of technology today , Metaverse is very
+            useful for work in today times or can be called Web 3.0 by using
+            metaverse you can use it as anything&quot;
           </p>
         </motion.div>
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          //@ts-expect-error unkown 
           className={`justify-center items-center relative flex-1 flex  `}
         >
           <img
@@ -48,7 +45,7 @@ const Feedback = () => {
           />
           <motion.div
             variants={zoomIn(0.4, 1)}
-            //@ts-expect-error unkown 
+        
             className={`lg:block hidden absolute -left-[10%] top-[3%]`}
           >
             <img

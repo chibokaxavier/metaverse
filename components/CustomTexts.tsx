@@ -16,7 +16,7 @@ interface TitleTextProps {
 export const TypingText = ({ title, textStyles }: TypingTextProps) => (
   <motion.p
     variants={textContainer}
-    //@ts-expect-error unkown 
+   
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (
@@ -32,7 +32,7 @@ export const TitleText = ({ title, textStyles }: TitleTextProps) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    //@ts-expect-error unkown 
+    
     className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
   >
     {title}

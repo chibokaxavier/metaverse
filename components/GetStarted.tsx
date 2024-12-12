@@ -18,7 +18,7 @@ const GetStarted = () => {
       >
         <motion.div
           variants={planetVariants("left")}
-          //@ts-expect-error unkown 
+          
           className={`flex-1 flex justify-center items-center`}
         >
           <img
@@ -29,7 +29,7 @@ const GetStarted = () => {
         </motion.div>{" "}
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          //@ts-expect-error unkown 
+         
           className={`flex-[0.75] flex-col flex justify-center`}
         >
           <TypingText title="| How Metaversus works" textStyles="" />

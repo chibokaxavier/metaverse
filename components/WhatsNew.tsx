@@ -24,7 +24,7 @@ const WhatsNew = () => {
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          //@ts-expect-error unkown 
+          
           className={`flex-[0.75] flex-col flex justify-center`}
         >
           <TypingText title="| What is new" textStyles="" />
@@ -37,7 +37,7 @@ const WhatsNew = () => {
         </motion.div>
         <motion.div
           variants={planetVariants("right")}
-          //@ts-expect-error unkown 
+         
           className={`flex-1 flex justify-end items-end`}
         >
           <img
