@@ -1,16 +1,7 @@
 " use client";
-import styles from "@/styles";
-import React, { useState } from "react";
-import {
-  fadeIn,
-  staggerContainer,
-  textVariant,
-  planetVariants,
-} from "@/utils/motion";
-import { motion, useScroll } from "framer-motion";
-import { TypingText, TitleText, StartSteps } from "@/components";
-import { newFeatures, startingFeatures } from "@/constants";
-import { NewFeature } from "@/components";
+import React from "react";
+import { fadeIn } from "@/utils/motion";
+import { motion } from "framer-motion";
 
 interface CardProps {
   imgUrl: string;

@@ -1,15 +1,8 @@
 "use client";
-import styles from "@/styles";
-import React, { useState } from "react";
-import {
-  fadeIn,
-  footerVariants,
-  staggerContainer,
-  zoomIn,
-} from "@/utils/motion";
+import React from "react";
+import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
-import { TypingText, TitleText, StartSteps, InsightCard } from "@/components";
-import { insights, socials } from "@/constants";
+import { socials } from "@/constants";
 const Footer = () => {
   return (
     <motion.footer

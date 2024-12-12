@@ -1,9 +1,8 @@
 "use client";
-import styles from "@/styles";
-import React, { useState } from "react";
+import React from "react";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
-import { TypingText, TitleText, StartSteps } from "@/components";
+import { TypingText, TitleText } from "@/components";
 
 const World = () => {
   return (

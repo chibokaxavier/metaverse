@@ -1,15 +1,14 @@
 "use client";
-import styles from "@/styles";
-import React, { useState } from "react";
+import React from "react";
 import {
   fadeIn,
   staggerContainer,
-  textVariant,
+  
   planetVariants,
 } from "@/utils/motion";
-import { motion, useScroll } from "framer-motion";
-import { TypingText, TitleText, StartSteps } from "@/components";
-import { newFeatures, startingFeatures } from "@/constants";
+import { motion } from "framer-motion";
+import { TypingText, TitleText } from "@/components";
+import { newFeatures  } from "@/constants";
 import { NewFeature } from "@/components";
 
 const WhatsNew = () => {

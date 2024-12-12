@@ -1,10 +1,7 @@
 "use client";
-import styles from "@/styles";
-import React, { useState, Dispatch, SetStateAction } from "react";
-import { fadeIn, staggerContainer, textVariant } from "@/utils/motion";
-import { motion, useScroll } from "framer-motion";
-import { TypingText, TitleText } from "@/components";
-import { exploreWorlds } from "@/constants";
+import React, {  Dispatch, SetStateAction } from "react";
+import { fadeIn  } from "@/utils/motion";
+import { motion } from "framer-motion";
 
 interface ExploreCardProps {
   active: string;

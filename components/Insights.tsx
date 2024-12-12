@@ -1,9 +1,8 @@
 "use client";
-import styles from "@/styles";
-import React, { useState } from "react";
-import { fadeIn, staggerContainer } from "@/utils/motion";
+import React from "react";
+import {  staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
-import { TypingText, TitleText, StartSteps, InsightCard } from "@/components";
+import { TypingText, TitleText,  InsightCard } from "@/components";
 import { insights } from "@/constants";
 
 const Insights = () => {

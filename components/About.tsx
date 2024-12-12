@@ -25,7 +25,7 @@ const About = () => {
         >
           <span className="font-extrabold text-white">Metaverse </span>
           is a new thing in the future, where you can enjoy the virtual world by
-          feeling like it's really real, you can feel what you feel in this
+          feeling like it is really real, you can feel what you feel in this
           metaverse world, because this is really the{" "}
           <span className="font-extrabold text-white">
             madness of the metaverse{" "}
