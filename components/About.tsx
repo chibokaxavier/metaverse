@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { fadeIn, staggerContainer } from "@/utils/motion";
+import {  staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { TypingText } from "@/components";
 
@@ -18,7 +18,7 @@ const About = () => {
       >
         <TypingText title="| About Metaverse" textStyles="text-center" />
         <motion.p
-          variants={fadeIn("left", "tween", 0.2, 1)}
+          // variants={fadeIn("left", "tween", 0.2, 1)}
 
           className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
         >
@@ -37,7 +37,7 @@ const About = () => {
           madness of the metaverse by scrolling down
         </motion.p>
         <motion.img
-          variants={fadeIn("up", "tween", 0.3, 1)}
+          // variants={fadeIn("up", "tween", 0.3, 1)}
           
           src="/arrow-down.svg"
           alt="arrow-down"
