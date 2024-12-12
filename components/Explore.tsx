@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import {  staggerContainer, textVariant } from "@/utils/motion";
+import { staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { TypingText, TitleText, ExploreCard } from "@/components";
 import { exploreWorlds } from "@/constants";
@@ -10,7 +10,7 @@ const Explore = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12" id="explore">
       <motion.div
-        //@ts-ignore
+        //@ts-expect-error unkown  jjk
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
@@ -19,12 +19,7 @@ const Explore = () => {
       >
         <TypingText title="| The World" textStyles="text-center" />
         <TitleText
-          title={
-            <>
-              Choose the world you want <br className="md:block hidden " /> to
-              explore
-            </>
-          }
+          title={"Choose the world you want to explore"}
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
@@ -32,7 +27,7 @@ const Explore = () => {
             <ExploreCard
               key={world.id}
               {...world}
-               index={index}
+              index={index}
               active={active}
               handleClick={setActive}
             />

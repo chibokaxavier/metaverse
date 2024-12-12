@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <motion.footer
       variants={footerVariants}
-      //@ts-ignore
+      //@ts-expect-error unkown 
       className={`sm:p-16 xs:p-8 px-6 py-12  relative`}
       initial="hidden"
       whileInView="show"

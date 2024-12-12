@@ -10,7 +10,7 @@ const Insights = () => {
     <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       {" "}
       <motion.div
-        //@ts-ignore
+        //@ts-expect-error unkown 
         variants={staggerContainer}
         className={`mx-auto flex flex-col 2xl:max-w-[1280px] w-full`}
         initial="hidden"

@@ -15,7 +15,7 @@ const WhatsNew = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       <motion.div
-        //@ts-ignore
+        //@ts-expect-error unkown 
         variants={staggerContainer}
         className={`mx-auto flex lg:flex-row flex-col gap-8 2xl:max-w-[1280px] w-full`}
         initial="hidden"
@@ -24,20 +24,20 @@ const WhatsNew = () => {
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          //@ts-ignore
+          //@ts-expect-error unkown 
           className={`flex-[0.75] flex-col flex justify-center`}
         >
           <TypingText title="| What is new" textStyles="" />
-          <TitleText title={<>What is new about metaverse?</>} textStyles="" />
+          <TitleText title={"What is new about metaverse?"} textStyles="" />
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px] ">
-            {newFeatures.map((feat, index) => (
+            {newFeatures.map((feat) => (
               <NewFeature key={feat.title} {...feat} />
             ))}
           </div>
         </motion.div>
         <motion.div
           variants={planetVariants("right")}
-          //@ts-ignore
+          //@ts-expect-error unkown 
           className={`flex-1 flex justify-end items-end`}
         >
           <img

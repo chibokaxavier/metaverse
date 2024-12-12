@@ -9,7 +9,7 @@ const GetStarted = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       <motion.div
-        //@ts-ignore
+        //@ts-expect-error unkown 
         variants={staggerContainer}
         className={`mx-auto flex lg:flex-row flex-col gap-8 2xl:max-w-[1280px] w-full`}
         initial="hidden"
@@ -18,7 +18,7 @@ const GetStarted = () => {
       >
         <motion.div
           variants={planetVariants("left")}
-          //@ts-ignore
+          //@ts-expect-error unkown 
           className={`flex-1 flex justify-center items-center`}
         >
           <img
@@ -29,12 +29,12 @@ const GetStarted = () => {
         </motion.div>{" "}
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          //@ts-ignore
+          //@ts-expect-error unkown 
           className={`flex-[0.75] flex-col flex justify-center`}
         >
           <TypingText title="| How Metaversus works" textStyles="" />
           <TitleText
-            title={<>Get started with just a few clicks</>}
+            title={"Get started with just a few clicks"}
             textStyles=""
           />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[20px] ">

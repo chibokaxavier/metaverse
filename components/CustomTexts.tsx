@@ -2,20 +2,21 @@
 
 import { textContainer, textVariant2 } from "@/utils/motion";
 import { motion } from "framer-motion";
+import React from "react";
 
 interface TypingTextProps {
   title: string;
   textStyles: string;
 }
 interface TitleTextProps {
-  title: any;
+  title: string;
   textStyles: string;
 }
 
 export const TypingText = ({ title, textStyles }: TypingTextProps) => (
   <motion.p
     variants={textContainer}
-    //@ts-ignore
+    //@ts-expect-error unkown 
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (
@@ -31,7 +32,7 @@ export const TitleText = ({ title, textStyles }: TitleTextProps) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    //@ts-ignore
+    //@ts-expect-error unkown 
     className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
   >
     {title}

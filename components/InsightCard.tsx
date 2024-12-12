@@ -14,7 +14,7 @@ const InsightCard = ({ index, imgUrl, title, subtitle }: CardProps) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 1)}
-      //@ts-ignore
+      //@ts-expect-error unkown 
       className="flex md:flex-row flex-col gap-4"
     >
       <img

@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className={`${styles.yPaddings} sm:px-16 px-6`}>
       <motion.div
-        //@ts-ignore
+        //@ts-expect-error unkown 
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="flex justify-center items-center flex-col relative z-10">
           <motion.h1
             variants={textVariant(1.1)}
-            //@ts-ignore
+            //@ts-expect-error unkown 
             className={`font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white`}
           >
             Metaverse
@@ -26,7 +26,7 @@ const Hero = () => {
 
           <motion.div
             variants={textVariant(1.2)}
-            //@ts-ignore
+            //@ts-expect-error unkown 
             className={`flex flex-row justify-center items-center`}
           >
             <h1
@@ -45,7 +45,7 @@ const Hero = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          //@ts-ignore
+          //@ts-expect-error unkown 
           className="relative w-full md:-mt-[20px] -mt-[12px]"
         >
           <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
